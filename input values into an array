@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+int i,n;
+int arr[];
+int main(){
+    
+    printf("enter no.of values in array:");
+    scanf("%d",&n);
+    
+    for(i=0;i<n;i++){
+        printf("enter a num for arr[%d]:",i);
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("array is:\n");
+    for(i=0;i<n;i++){
+        printf("%d\t",arr[i]);
+    
+    }
+    printf("\n");
+    return 0;
+    
+}
