@@ -1,0 +1,27 @@
+#include <stdio.h>
+#define max 50
+int main() {
+    int i,item,arr[max],n,pos;
+    printf("enter array size:");
+    scanf("%d",&n);
+    printf("enter array:");
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("enter item to be updated:");
+    scanf("%d",&item);
+    printf("enter pos of item to be updated:");
+    scanf("%d",&pos);
+    if (pos>=0 && pos<n){
+        arr[pos]=item;
+    }
+    else {
+        printf("invalid position");
+    }
+    printf("updated array:");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    
+    return 0;
+}
